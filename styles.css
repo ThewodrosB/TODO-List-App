@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    color: white;
+	background-color: #2C8E99;
+	font-size: 3.5em;
+	text-align: center;
+    text-transform: uppercase;
+	margin: 0;
+	padding: 10px 0;
+}

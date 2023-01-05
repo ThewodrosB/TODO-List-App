@@ -60,6 +60,10 @@ h3 {
   color: white;
 }
 
+.list-group {
+  font-weight: bold;
+  flex-wrap: wrap;
+}
 
 
   

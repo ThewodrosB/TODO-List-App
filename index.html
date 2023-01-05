@@ -9,48 +9,42 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <header class="bg-secondary text-md-center p-8 text-center">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-12 col-md-12 col-sm-12">
-                  <font face="Comic sans MS" 
-                      size="11" color="black">
-                      <strong>ToDo List</strong>
-                  </font>
-                     
-              </div>
-          </div>
-      </div>
-  </header>
-  <div class="container mt-3">
-    <h2>Add Items</h2>
-
-    <label id="lblsuccess" class="text-success" 
-            style="display: none;">
-    </label>
-      
-    <form id="addForm">
+    <section class="Task">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-7 col-md-7 col-sm-7">
-
+            <div>
+                <h1>ToDo List</h1>                   
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-3">
+        <h2>Add Items</h2>
+    </div>
+    <div class="label">
+        <label id="lblsuccess" class="text-success" 
+            style="display: none;">
+        </label>
+    </div>
+    <form id="addForm" class="addForm">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
                 <input type="text" onkeyup=
                     "toggleButton(this, 'submit')"
                     class="form-control" id="item">
             </div>
-
-            <div class="col-lg-5 col-md-5 col-sm-5">
-              <input type="submit" class="btn btn-dark"
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <input type="submit" class="btn btn-dark"
                     id="submit" value="Submit" disabled>
             </div>
         </div>
     </form>
-
-    <h3 class="mt-4">Tasks</h3>
-
+        <h3 class="mt-4">Tasks</h3>
     <form id="addForm">
         <ul class="list-group" id="items"></ul>
     </form>
 </div>
+</section>
     <script src="./script.js"></script>
   </body>
 </html>
